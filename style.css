@@ -1,13 +1,36 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,600;1,18..144,600&display=swap');
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background:  rgb(255, 174, 23)}
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background:  rgb(255, 174, 23)}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background:  rgb(255, 174, 23)}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: rgb(255, 174, 23);}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background:  rgb(255, 174, 23);}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-}
+  }
+
+
 
   header {
     position: fixed;
@@ -378,53 +401,6 @@ body {
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 10px 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  nav a {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-  .column {
-    width: 100%;
-    padding: 5px;
-  }
-  .row {
-    display: block;
-  }
-  .form-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .form-left, .form-inputs {
-    width: 100%;
-  }
-  .pic {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .gradient {
-    font-size: 30px;
-  }
 }
 
-@media only screen and (max-width: 480px) {
-  .menu, .main, .right {
-    width: 100%;
-    padding: 5px;
-  }
-  .card {
-    max-width: 100%;
-  }
-  footer {
-    padding: 10px;
-  }
-  .footercontainer {
-    padding: 30px 10px;
-  }
-}
 }
