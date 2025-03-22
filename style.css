@@ -1,6 +1,8 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,600;1,18..144,600&display=swap');
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +12,10 @@
 
 body {
   margin: 0;
+  background-color: #f4f4f4;
 }
 
-/* ==========================
-   Default styles for desktops
-============================= */
-
+/* Header */
 header {
   position: fixed;
   top: 0;
@@ -37,6 +37,7 @@ header {
   font-weight: 600;
 }
 
+/* Navigation Links */
 nav a {
   font-size: 18px;
   color: #fff;
@@ -51,75 +52,7 @@ nav a:active {
   color: #ff8c00;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 510px;
-}
-
-.column img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* ==========================
-   Media query for smaller devices
-============================= */
-
-@media only screen and (max-width: 600px) {
-  header {
-    padding: 15px 20px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    margin-left: 0;
-    margin-top: 10px;
-    font-size: 16px;
-  }
-
-  .column {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .pic {
-    width: 100%;
-    padding: 5px;
-  }
-
-  .form-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .form-inputs {
-    width: 100%;
-  }
-
-  .gradient {
-    font-size: 30px;
-  }
-
-  .btn, .button, .but {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-/* ==========================
-   Hero Section
-============================= */
-
+/* Hero Section */
 .lasag {
   background-image: url("img/img.png.jpg");
   background-color: #ffffff;
@@ -144,10 +77,105 @@ nav a:active {
   filter: drop-shadow(2px 2px #333);
 }
 
-/* ==========================
-   Product Cards
-============================= */
+/* Columns */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+}
 
+.column img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clearfix for Rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Form Section */
+.form-container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.form-left-title h1 {
+  font-weight: 600;
+  color: rgb(141, 254, 4);
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.form-left hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #01ff0d;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-inputs {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #1a1a1a;
+  border-radius: 50px;
+}
+
+.form-left textarea {
+  width: 100%;
+  height: 140px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.form-left button,
+.but {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #ffffff;
+  gap: 15px;
+  border: none;
+  border-radius: 50px;
+  background-image: linear-gradient(#50C878, #FCCCC4);
+  cursor: pointer;
+}
+
+.but {
+  background-color: rgb(115, 255, 0);
+}
+
+/* Product Section */
+.product {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  background-color: white;
+}
+
+/* Cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -176,129 +204,35 @@ nav a:active {
   opacity: 0.7;
 }
 
-/* ==========================
-   Buttons and Forms
-============================= */
-
-.btn {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  padding: 14px 28px;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.sol {
-  border-color: #ff9800;
-  color: orange;
-}
-
-.sol:hover {
-  background: #ff9800;
-  color: white;
-}
-
-.but {
+/* Picture Styling */
+.pic {
+  border: 1px solid #eaeaea;
+  border-radius: 7px;
+  padding: 5px;
+  width: 310px;
+  float: left;
   display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: #ffffff;
-  gap: 15px;
-  border: none;
-  border-radius: 50px;
-  background-color: rgb(115, 255, 0);
-  cursor: pointer;
-  text-align: center;
 }
 
+.pic:hover {
+  box-shadow: 0 0 2px 1px rgba(9, 255, 0, 0.5);
+}
+
+/* Buttons */
 .button {
   background-color: rgb(166, 255, 0);
   border: 4px solid gold;
   padding: 10px;
   border-radius: 50px 20px;
   color: rgb(44, 44, 44);
-  padding: 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
   display: block;
-  margin: 0 auto;
-}
-
-/* ==========================
-   Form Styles
-============================= */
-
-.form-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.form-left {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 20px;
-}
-
-.form-left-title h1 {
-  font-weight: 600;
-  color: rgb(141, 254, 4);
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
-.form-left hr {
-  border: none;
-  width: 120px;
-  height: 5px;
-  background-color: #01ff0d;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.form-inputs {
-  width: 400px;
-  height: 50px;
-  border: none;
-  outline: none;
-  padding-left: 25px;
-  font-weight: 500;
-  color: #1a1a1a;
-  border-radius: 50px;
-}
-
-.form-left textarea {
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 20px;
-}
-
-.form-left button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
+  margin: 10px auto;
   font-size: 16px;
-  color: #ffffff;
-  gap: 15px;
-  border: none;
-  border-radius: 50px;
-  background-image: linear-gradient(#50C878, #FCCCC4);
   cursor: pointer;
 }
 
-/* ==========================
-   Footer Styles
-============================= */
-
+/* Footer */
 footer {
   text-align: center;
   padding: 3px;
@@ -319,7 +253,7 @@ footer {
 .icons a {
   text-decoration: none;
   padding: 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   margin: 10px;
   border-radius: 40px;
 }
@@ -337,12 +271,19 @@ footer {
 
 .icons a:hover i {
   color: #ffffff;
-  transition: 0.5s;
+}
+
+.footernav {
+  margin: 30px 0;
 }
 
 .footernav ul {
   display: flex;
   justify-content: center;
+}
+
+.footernav ul li {
+  list-style: none;
 }
 
 .footernav ul li a {
@@ -358,12 +299,53 @@ footer {
   opacity: 1;
 }
 
-.footerbot {
-  background-color: #ff8c00;
-  padding: 30px;
-  text-align: center;
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-left,
+  .form-inputs {
+    width: 100%;
+  }
+
+  .lasag {
+    height: 300px;
+  }
+
+  .gradient {
+    font-size: 30px;
+  }
 }
 
-.footerbot g {
-  color: #f4f4f4;
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 20px 120px;
+  }
+
+  .column {
+    width: 50%;
+  }
+
+  .form-container {
+    justify-content: space-between;
+  }
 }
