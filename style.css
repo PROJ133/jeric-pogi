@@ -1,25 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,600;1,18..144,600&display=swap');
 
+/* Responsive Media Queries */
 @media only screen and (max-width: 600px) {
-  .example {background:  rgb(255, 174, 23)}
-}
+  .example {
+    background: rgb(255, 174, 23);
+  }
 
-@media only screen and (min-width: 600px) {
-  .example {background:  rgb(255, 174, 23)}
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .column {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form-left,
+  .form-inputs {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .example {background:  rgb(255, 174, 23)}
-} 
+  header {
+    padding: 20px 120px;
+  }
+
+  .column {
+    width: 50%;
+  }
+
+  .form-container {
+    justify-content: space-between;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   }
-
-
 
   header {
     position: fixed;
@@ -77,18 +111,14 @@
     clear: both;
   }
 
-
 body {
     margin: 0;
   
 }
 
-
   h1{
     text-align: center;
   }
-
- 
 
   .navlogo {
     border-radius: 50%;
@@ -99,7 +129,6 @@ body {
   margin-right: auto;
   }
 
-  
   .lasag {
     background-image: url("img/img.png.jpg");
     background-color: #ffffff;
@@ -111,7 +140,7 @@ body {
     opacity: 0.8;
   
   }
-  
+
   .gradient {
     text-align: center;
     position: absolute;
@@ -124,9 +153,6 @@ body {
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 2px #333);
   }
-      
-  
-
 
   .pic {
   border: 1px solid #eaeaea;
@@ -137,18 +163,15 @@ body {
   display: flex;
   }
   
-
 .pic:hover {
   box-shadow: 0 0 2px 1px rgba(9, 255, 0, 0.5);
 }
   
-
   .product{
     font-family: "poppins", sans-serif;
     font-size: 40px;
     background-image: white;
   }
-
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -161,9 +184,6 @@ body {
     color: grey;
     font-size: 22px;
   }
-
-  
-    
   
   .card button {
     border: none;
@@ -189,7 +209,6 @@ body {
     color:rgb(255, 255, 255)
     
   }
-  
 
   .btn {
     border: 2px solid black;
